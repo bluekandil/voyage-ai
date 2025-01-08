@@ -9,14 +9,15 @@ try:
     client = OpenAI(
         api_key = os.environ.get("ACCESS_KEY"),   
     )
-
+    
     completion = client.chat.completions.create(
-    model = "gpt-3.5-turbo",
+    model = "gpt-4o-mini",
     messages = [
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": user_prompt},
     ]
     )
+    
     print('============================================================')    
     print(completion.choices[0].message.content.strip())
     print('============================================================')
