@@ -28,7 +28,9 @@ This is a simple script that uses the OpenAI API to generate interesting facts a
 
 ## Setup
 
-1. Set your OpenAI API key as an environment variable:
+1. Start by registering on their website at https://platform.openai.com/ and get your API key
+
+2. Set your OpenAI API key as an environment variable:
 
     On Windows, use:
 
